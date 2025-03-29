@@ -1,0 +1,3 @@
+.open-modal {
+   @tw(bg-gray-800, text-white, p-4);
+}
