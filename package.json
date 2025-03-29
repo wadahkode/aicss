@@ -1,0 +1,14 @@
+{
+  "name": "aicss",
+  "version": "1.0.0",
+  "description": "AI-powered CSS compiler",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node src/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
