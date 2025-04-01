@@ -2,3 +2,9 @@ ai.body = {
   background: black;
   color: white;
 }
+
+ai.setup = {
+  plugins: {
+    name: "tailwindcss"
+  }
+}

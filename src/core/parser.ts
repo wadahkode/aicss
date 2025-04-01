@@ -4,12 +4,19 @@ export function parse(input: string): Record<string, Record<string, string>> {
   const output: Record<string, Record<string, string>> = {}
   const lines = input.split('\n').map((line) => line.trim())
   let currentSelector = ''
+  let currentValue = ''
 
   for (const line of lines) {
     const selectorMatch = line.match(/^ai\.(\w+)\s*=\s*\{$/) // Tangkap selector
     if (selectorMatch) {
       currentSelector = selectorMatch[1] // Ambil hanya nama class (tanpa "ai." dan "=")
-      output[currentSelector] = {}
+      currentValue = selectorMatch[2]
+
+      if (currentSelector === 'setup') {
+        AIStore.setSetup(JSON.parse(currentValue))
+      } else {
+        output[currentSelector] = {}
+      }
     } else if (line.includes(':') && currentSelector) {
       const [prop, value] = line
         .replace(';', '')

@@ -1,6 +1,7 @@
 import { parse } from './core/parser'
 import { transform } from './core/transformer'
 import { writeCSS } from './core/writer'
+import { setupAiCss } from './runtime/setup'
 import { AIStore } from './runtime/store'
 import { readAICSSFile } from './utils/fileReader'
 
@@ -14,11 +15,14 @@ async function Aicss(filePath?: string) {
     // (Opsional) Gunakan data dari AIStore untuk debugging atau pemrosesan lebih lanjut
     console.log('AIStore data:', AIStore.getAll())
 
+    // Terapkan konfigurasi AI-css
+    setupAiCss()
+
     // Lakukan transformasi aturan menjadi CSS standar
     const transformed = transform(parsed)
 
     // Tulis hasilnya ke file output
-    writeCSS('dist/output.css', transformed)
+    writeCSS('runtime/output.css', transformed)
 
     console.log('✅ AI-CSS berhasil dikompilasi!')
   } catch (error: any) {
