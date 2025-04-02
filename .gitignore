@@ -3,5 +3,10 @@ dist/
 .env
 backup
 tsconfig.bin.ts
-/runtime/*
+/playground/*
+css/*
 !.gitkeep
+js/*
+!.gitkeep
+!README.md
+!.index.html

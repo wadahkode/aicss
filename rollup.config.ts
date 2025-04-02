@@ -9,13 +9,13 @@ export default {
   input: 'src/index.ts',
   output: [
     {
-      file: 'dist/index.mjs',
+      file: 'playground/js/index.mjs',
       format: 'esm',
       sourcemap: !production,
       exports: 'named',
     },
     {
-      file: 'dist/index.cjs',
+      file: 'playground/js/index.cjs',
       format: 'cjs',
       sourcemap: !production,
       exports: 'named',
@@ -27,5 +27,5 @@ export default {
     json(),
     typescript({ tsconfig: './tsconfig.json' }),
   ],
-  external: ['chokidar', 'fs', 'path', 'postcss', 'tailwindcss'],
+  external: ['fs', 'path'],
 }

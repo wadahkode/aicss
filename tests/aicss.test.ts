@@ -3,7 +3,7 @@ import { readFileSync, unlinkSync } from 'fs'
 
 describe('Aicss Compiler', () => {
   const testFilePath = 'tests/sample.aicss'
-  const outputFilePath = 'runtime/output.css'
+  const outputFilePath = 'playground/css/output.css'
 
   beforeAll(() => {
     // Simpan contoh file AICSS

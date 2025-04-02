@@ -22,7 +22,7 @@ async function Aicss(filePath?: string) {
     const transformed = transform(parsed)
 
     // Tulis hasilnya ke file output
-    writeCSS('runtime/output.css', transformed)
+    writeCSS('playground/css/output.css', transformed)
 
     console.log('✅ AI-CSS berhasil dikompilasi!')
   } catch (error: any) {
