@@ -6,5 +6,7 @@ ai.body = {
 ai.setup = {
   plugins: {
     name: "tailwindcss"
+    version: "latest"
+    mode: "development"
   }
 }

@@ -1,9 +1,11 @@
+import { Setup } from '../plugins/types'
+
 export const AIStore = {
   // Menyimpan aturan CSS dengan key berupa selector, dan value adalah object aturan
   styles: {} as Record<string, Record<string, string>>,
 
   // Menyimpan pengaturan
-  setupConfig: {} as Record<string, any>,
+  setupConfig: {} as Setup,
 
   /**
    * Menyimpan aturan CSS untuk selector tertentu.
@@ -19,7 +21,7 @@ export const AIStore = {
    *
    * ai.setup = {}
    */
-  setSetup(config: Record<string, any>) {
+  setSetup(config: Setup) {
     this.setupConfig = config
   },
 
@@ -44,7 +46,7 @@ export const AIStore = {
    * Mengambil semua aturan dari
    * ai.setup
    */
-  getSetup(): Record<string, any> {
+  getSetup(): Setup {
     return this.setupConfig
   },
 }

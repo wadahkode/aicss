@@ -1,7 +1,9 @@
 import { AIStore } from '../runtime/store'
 
-export function parse(input: string): Record<string, Record<string, string>> {
-  const output: Record<string, Record<string, string>> = {}
+type Parsed = Record<string, Record<string, string>>
+
+export function parse(input: string): Parsed {
+  const output: Parsed = {}
   const lines = input.split('\n').map((line) => line.trim())
   let currentSelector = ''
   let currentValue = ''

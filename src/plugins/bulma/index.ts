@@ -1,5 +1,7 @@
+import { Plugins } from '../types'
+
 export default {
-  init() {
+  init(plugins?: Plugins | Plugins[]) {
     console.log('🔌 Loading plugin: bulma')
     console.log('✅ Bulma plugin is active.')
   },

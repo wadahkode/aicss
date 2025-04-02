@@ -9,7 +9,8 @@ describe('AIStore Setup Configuration', () => {
     const mockSetup = {
       plugins: {
         name: 'tailwindcss',
-        autoConfig: true,
+        version: 'latest',
+        mode: 'development',
       },
     }
 
