@@ -1,86 +1,90 @@
-# AICSS - AI-powered CSS Preprocessor
+# AICSS
 
-AICSS adalah preprocessor CSS berbasis AI yang memungkinkan penggunaan sintaks khusus untuk menulis gaya dengan lebih efisien dan otomatis dikonversi menjadi CSS standar.
+**AICSS** adalah sebuah pustaka yang memungkinkan Anda untuk menulis gaya dan logika interaktif dalam satu file dengan ekstensi `.aicss`. Dengan pendekatan ini, pengembangan komponen menjadi lebih modular dan terstruktur.
 
-## 🚀 Fitur
-- **Sintaks sederhana**: Menggunakan deklarasi berbasis objek untuk mendefinisikan gaya.
-- **Transformasi otomatis**: Mengubah sintaks AICSS menjadi CSS standar.
-- **Dukungan variabel AI**: Memungkinkan penggunaan AI Store untuk menyimpan variabel global.
-- **Kompilasi cepat**: Menghasilkan file CSS secara efisien.
+## Fitur Utama
 
-## 📦 Instalasi
-Pastikan Anda memiliki **Node.js** terinstal, lalu jalankan perintah berikut:
+- **Gaya Terpadu**: Menggabungkan CSS dan JavaScript dalam satu file `.aicss` untuk kemudahan pengelolaan.
+- **Modularitas**: Memungkinkan pemisahan logika dan gaya per komponen.
+- **Konfigurasi Fleksibel**: Mendukung konfigurasi melalui file `aicss.config.js` untuk menyesuaikan direktori publik dan peta event.
 
-```sh
-npm install aicss
+## Instalasi
+
+Untuk menggunakan AICSS dalam proyek Anda, ikuti langkah-langkah berikut:
+
+### 1. Kloning Repository
+
+```bash
+git clone https://github.com/wadahkode/aicss.git
 ```
 
-## 🔥 Cara Menggunakan
-Buat file dengan ekstensi `.aicss` dan tulis kode seperti berikut:
+### 2. Masuk ke Direktori Proyek
 
-```aicss
-ai.button = {
-  background: "black";
-  color: "white";
+```bash
+cd aicss
+```
+
+### 3. Instal Dependensi
+
+```bash
+npm install
+```
+
+## Penggunaan Dasar
+
+Setelah instalasi, Anda dapat mulai menggunakan AICSS dengan langkah-langkah berikut:
+
+### 1. Buat File `.aicss`
+
+Misalnya, buat file `button.aicss` dengan konten berikut:
+
+```javascript
+export default {
+  component: [
+    {
+      name: "btn-primary",
+      styles: {
+        background: "blue",
+        color: "white",
+        padding: "10px 20px",
+        border: "none",
+        borderRadius: "5px",
+        cursor: "pointer"
+      },
+      onClick(event) {
+        alert("Tombol diklik!");
+      }
+    }
+  ]
 }
 ```
 
-Kemudian, gunakan **Aicss** untuk mengonversinya ke CSS:
+### 2. Tambahkan Elemen di HTML
 
-```ts
-import { Aicss } from "aicss"
-
-Aicss("styles.aicss")
+```html
+<button v-ai="btn-primary">Klik Saya</button>
 ```
 
-Hasilnya akan dikompilasi menjadi **CSS standar**:
+### 3. Integrasikan AICSS dalam Proyek
 
-```css
-.button {
-  background: black;
-  color: white;
+Pastikan Anda telah mengimpor dan menerapkan AICSS dalam proyek Anda sesuai dengan kebutuhan.
+
+## Konfigurasi
+
+Anda dapat menyesuaikan konfigurasi AICSS dengan membuat file `aicss.config.js` di root proyek Anda:
+
+```javascript
+export default {
+  publicDir: "public", // Direktori publik default
+  eventMap: {
+    onSwipe: "swipe",
+    onLongPress: "longpress"
+  }
 }
 ```
 
-## 📂 Struktur Proyek
-```
-.
-├── src/
-│   ├── core/
-│   │   ├── parser.ts      # Parser untuk sintaks AICSS
-│   │   ├── transformer.ts # Transformasi ke CSS
-│   │   ├── writer.ts      # Menulis hasil ke file CSS
-│   ├── runtime/
-│   │   ├── store.ts       # Penyimpanan variabel AI
-│   ├── utils/
-│   │   ├── fileReader.ts  # Membaca file AICSS
-│   ├── index.ts           # Entry point utama
-├── tests/
-│   ├── compiler.test.ts   # Pengujian parser & transformer
-├── package.json
-└── README.md
-```
+## Lisensi
 
-## 🛠 Pengujian
-AICSS menggunakan **Jest** untuk pengujian. Jalankan tes dengan perintah berikut:
-
-```sh
-npm test
-```
-
-## 🌍 Kontribusi
-Kami sangat mengapresiasi kontribusi dari komunitas! Jika Anda ingin membantu:
-1. Fork repositori ini.
-2. Buat branch baru (`git checkout -b feature-anda`).
-3. Commit perubahan (`git commit -m "Menambahkan fitur XYZ"`).
-4. Push branch (`git push origin feature-anda`).
-5. Buat **Pull Request**.
-
-## 📜 Lisensi
-Proyek ini dilisensikan di bawah **MIT License**.
-
----
-
-Nikmati pengembangan CSS yang lebih cepat dan efisien dengan AICSS! 🚀
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 
