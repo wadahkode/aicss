@@ -76,8 +76,8 @@ Anda dapat menyesuaikan konfigurasi AICSS dengan membuat file `aicss.config.json
 ```json
 {
   eventMap: {
-    onSwipe: "swipe",
-    onLongPress: "longpress"
+    "onSwipe": "swipe",
+    "onLongPress": "longpress"
   }
 }
 ```
