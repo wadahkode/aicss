@@ -34,7 +34,11 @@ export async function applyAICSS(config: any) {
       el.setAttribute('data-aicss', 'applied')
       el.setAttribute('v-ai', 'applied')
 
-      Object.assign(el.style, comp.styles)
+      if (comp.className) {
+        el.classList.add(...comp.className.split(' ')) // Tambahkan class Tailwind
+      } else {
+        Object.assign(el.style, comp.styles)
+      }
 
       Object.entries(eventHandlers).forEach(([prop, eventName]) => {
         if (comp[prop]) {
