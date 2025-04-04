@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import AicssPlugin from './plugins/vite-plugin-aicss'
-import tailwindcss from '@tailwindcss/vite'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -13,7 +12,6 @@ const fileName = (format: string) => {
 export default defineConfig({
   plugins: [
     AicssPlugin(),
-    tailwindcss(),
     {
       ...AicssPlugin({ dir: 'public' }),
       apply: 'build',
