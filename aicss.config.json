@@ -1,3 +1,5 @@
 {
-  "eventMap": ["click"]
+  "eventMap": {
+    "onClick": "click"
+  }
 }

@@ -1,15 +1,19 @@
 <!doctype html>
 <html>
   <head>
+    <title>Aicss</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>AICss Playground</h1>
-    <button v-ai="btn-primary">Click me</button>
-    <script src="/dist/aicss.min.js"></script>
+    <div v-ai="container">
+      <h1 v-ai="brand">Aicss</h1>
+      <button v-ai="btn-primary">Click me</button>
+    </div>
+    <script src="dist/aicss.min.js"></script>
   </body>
 </html>

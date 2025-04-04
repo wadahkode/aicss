@@ -1,17 +1,19 @@
 export default {
   component: [
     {
+      name: 'container',
+      className: 'flex flex-col items-center h-[100vh] justify-center gap-6',
+    },
+    {
+      name: 'brand',
+      className: 'font-bold text-4xl',
+    },
+    {
       name: 'btn-primary',
-      styles: {
-        background: 'green',
-        color: 'white',
-        border: 'none',
-        padding: '12px 7px',
-        borderRadius: '4px',
-        outline: "none"
-      },
+      className:
+        'bg-green-500 px-4 py-2 rounded border-none hover:outline-none text-white',
       onClick(event) {
-        alert('Clicked!')
+        alert('Welcome to Aicss!')
       },
     },
   ],
