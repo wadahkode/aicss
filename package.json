@@ -1,15 +1,27 @@
 {
-  "name": "aicss",
+  "name": "@wadahkode/aicss",
   "version": "1.0.0",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "aicss.config.json"
   ],
   "main": "dist/aicss.min.js",
+  "module": "dist/aicss.js",
+  "exports": {
+    ".": {
+      "import": "./dist/aicss.js",
+      "require": "./dist/aicss.min.js"
+    }
+  },
+  "types": "dist/index.d.ts",
   "scripts": {
+    "clean": "rm -rf dist",
     "dev": "vite dev",
-    "build": "vite build",
-    "test": "jest"
+    "build": "npm run clean && tsc && vite build",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",

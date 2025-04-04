@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    "outDir": "dist",
     "module": "ESNext",
-    "target": "ES6",
+    "target": "ESNext",
+    "moduleResolution": "bundler",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "dist"
   },
   "include": ["src"],
-  "exclude": ["public", "node_modules"]
+  "exclude": ["node_modules"]
 }

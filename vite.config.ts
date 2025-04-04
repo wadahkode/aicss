@@ -38,6 +38,7 @@ export default defineConfig({
       },
     },
     rollupOptions: {
+      external: ['vite'],
       output: {
         globals: {
           aicss: 'AicssPlugin',
