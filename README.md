@@ -6,7 +6,7 @@
 
 - **Gaya Terpadu**: Menggabungkan CSS dan JavaScript dalam satu file `.aicss` untuk kemudahan pengelolaan.
 - **Modularitas**: Memungkinkan pemisahan logika dan gaya per komponen.
-- **Konfigurasi Fleksibel**: Mendukung konfigurasi melalui file `aicss.config.js` untuk menyesuaikan direktori publik dan peta event.
+- **Konfigurasi Fleksibel**: Mendukung konfigurasi melalui file `aicss.config.json` untuk menyesuaikan peta event.
 
 ## Instalasi
 
