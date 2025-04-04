@@ -1,0 +1,15 @@
+
+
+> @wadahkode/aicss@1.0.0 build /home/wadahkode/wadahkode/packages/aicss
+> npm run clean && tsc && vite build
+
+[1mnpm[22m [33mwarn[39m [94mUnknown env config "verify-deps-before-run". This will stop working in the next major version of npm.[39m
+[1G[0K⠙[1G[0K⠹[1G[0K
+> @wadahkode/aicss@1.0.0 clean
+> rm -rf dist
+
+[1G[0K⠸[1G[0K[1G[0K⠙[1G[0K[36mvite v6.2.5 [32mbuilding for production...[36m[39m
+[2K[1Gtransforming (1) [2msrc/index.ts[22m[2K[1Gtransforming (2) [2msrc/loader.ts[22m[2K[1Gtransforming (3) [2msrc/transformer.ts[22m[2K[1G[32m✓[39m 5 modules transformed.
+[2K[1Grendering chunks (1)...[2K[1G[2K[1Gcomputing gzip size (0)...[2K[1Gcomputing gzip size (1)...[2K[1G[2mdist/[22m[36maicss.js  [39m[1m[2m2.27 kB[22m[1m[22m[2m │ gzip: 0.94 kB[22m[2m │ map: 5.97 kB[22m
+[2K[1Grendering chunks (1)...[2K[1G[2K[1Gcomputing gzip size (1)...[2K[1G[2mdist/[22m[36maicss.min.js  [39m[1m[2m1.28 kB[22m[1m[22m[2m │ gzip: 0.70 kB[22m[2m │ map: 5.95 kB[22m
+[32m✓ built in 2.34s[39m
