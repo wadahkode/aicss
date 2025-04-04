@@ -71,11 +71,10 @@ Pastikan Anda telah mengimpor dan menerapkan AICSS dalam proyek Anda sesuai deng
 
 ## Konfigurasi
 
-Anda dapat menyesuaikan konfigurasi AICSS dengan membuat file `aicss.config.js` di root proyek Anda:
+Anda dapat menyesuaikan konfigurasi AICSS dengan membuat file `aicss.config.json` di root proyek Anda:
 
-```javascript
-export default {
-  publicDir: "public", // Direktori publik default
+```json
+{
   eventMap: {
     onSwipe: "swipe",
     onLongPress: "longpress"
