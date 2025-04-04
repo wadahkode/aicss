@@ -1,17 +1,7 @@
 {
   "name": "aicss",
   "version": "1.0.0",
-  "type": "module",
-  "main": "playground/js/aicss.cjs",
-  "module": "playground/js/aicss.mjs",
-  "types": "playground/js/index.d.ts",
-  "exports": {
-    "import": "./playground/js/aicss.mjs",
-    "require": "./playground/js/aicss.cjs"
-  },
-  "files": [
-    "playground"
-  ],
+  "main": "dist/aicss.min.js",
   "scripts": {
     "start": "vite",
     "dev": "webpack --config webpack.dev.js --watch",
@@ -19,7 +9,6 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@rollup/plugin-json": "^6.1.0",
     "@types/jest": "^29.5.14",
     "@types/path-browserify": "^1.0.3",
     "clean-webpack-plugin": "^4.0.0",
