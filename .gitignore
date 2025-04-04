@@ -2,8 +2,3 @@ node_modules/
 dist/
 .env
 backup
-tsconfig.bin.ts
-playground/css/*
-!.gitkeep
-playground/js/*
-!.gitkeep

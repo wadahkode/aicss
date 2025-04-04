@@ -1,13 +1,9 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "bundler",
-    "strict": true,
-    "declaration": true,
     "outDir": "./dist",
-    "sourceMap": false,
+    "module": "ESNext",
+    "target": "ES6",
+    "strict": true,
     "esModuleInterop": true
   },
   "include": ["src"]

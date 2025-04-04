@@ -1,0 +1,18 @@
+export default {
+  component: [
+    {
+      name: 'btn-primary',
+      styles: {
+        background: 'green',
+        color: 'white',
+        border: 'none',
+        padding: '12px 7px',
+        borderRadius: '4px',
+        outline: "none"
+      },
+      onClick(event) {
+        alert('Clicked!')
+      },
+    },
+  ],
+}
