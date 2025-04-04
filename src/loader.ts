@@ -3,7 +3,7 @@ import { transformAICSS } from './transformer'
 
 export async function loadAICSS(file: string) {
   try {
-    const moduleUrl = `/public/aicss/${file}.aicss?timestamp=${Date.now()}`
+    const moduleUrl = `/public/${file}.aicss?timestamp=${Date.now()}`
     const response = await fetch(moduleUrl)
     let text = await response.text()
     text = transformAICSS(text)

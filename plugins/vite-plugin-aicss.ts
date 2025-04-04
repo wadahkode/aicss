@@ -7,7 +7,7 @@ interface AICSSOptions {
 }
 
 export default function AicssPlugin(options: AICSSOptions = {}): Plugin {
-  const aicssDir = options.dir || 'aicss'
+  const aicssDir = options.dir || ''
 
   return {
     name: 'vite-plugin-aicss',
@@ -23,7 +23,7 @@ export default function AicssPlugin(options: AICSSOptions = {}): Plugin {
         }
       })
     },
-    transform(code, id) {
+    transform(code: string, id: string) {
       if (id.startsWith(path.resolve(aicssDir)) && id.endsWith('.aicss')) {
         return transformAICSS(code)
       }
