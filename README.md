@@ -2,6 +2,7 @@
 ![NPM Downloads](https://img.shields.io/npm/dt/%40wadahkode%2Faicss)
 ![jsDelivr](https://data.jsdelivr.com/v1/package/npm/@wadahkode/aicss/badge)
 
+[![pnpm](https://img.shields.io/badge/powered_by-pnpm-4DAD4A?logo=pnpm)](https://pnpm.io)
 # AICSS
 
 **AICSS** adalah sebuah pustaka yang memungkinkan Anda untuk menulis gaya dan logika interaktif dalam satu file dengan ekstensi `.aicss`. Dengan pendekatan ini, pengembangan komponen menjadi lebih modular dan terstruktur.
