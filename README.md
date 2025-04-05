@@ -1,8 +1,6 @@
-![Build Status](https://github.com/wadahkode/aicss/actions/workflows/build.yml/badge.svg)
-
-![jsDelivr Downloads](https://data.jsdelivr.com/v1/package/npm/@wadahkode/aicss/badge)
-
-![npm](https://img.shields.io/npm/dt/@wadahkode/aicss)
+![Build](https://github.com/wadahkode/aicss/actions/workflows/build.yml/badge.svg)
+![NPM Downloads](https://img.shields.io/npm/dt/%40wadahkode%2Faicss)
+![jsDelivr](https://data.jsdelivr.com/v1/package/npm/@wadahkode/aicss/badge)
 
 # AICSS
 
