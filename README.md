@@ -1,3 +1,5 @@
+![Build Status](https://github.com/wadahkode/aicss/actions/workflows/build.yml/badge.svg)
+
 # AICSS
 
 **AICSS** adalah sebuah pustaka yang memungkinkan Anda untuk menulis gaya dan logika interaktif dalam satu file dengan ekstensi `.aicss`. Dengan pendekatan ini, pengembangan komponen menjadi lebih modular dan terstruktur.
